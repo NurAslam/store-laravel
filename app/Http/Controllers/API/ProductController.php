@@ -83,6 +83,6 @@ class ProductController extends Controller
                 ]
             );
         }
-        return ResponseFormatter::success($transaction->load('items.product'), 'Transaksi Berhasil');//setelah submit data nya belum ke update jadi bisa di load untuk ambil data yang sudah di submit sebelumnya
+        return ResponseFormatter::success($transaction->load('items.product'), 'Transaksi Berhasil'); //setelah submit data nya belum ke update jadi bisa di load untuk ambil data yang sudah di submit sebelumnya
     }
 }
